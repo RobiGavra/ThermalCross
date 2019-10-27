@@ -1,0 +1,424 @@
+﻿@font-face {
+    src: url(fonts/Rubik-Bold.ttf);
+    font-family: Rubik-Bold;
+}
+
+@font-face {
+    src: url(fonts/Roboto-Medium.ttf);
+    font-family: Roboto-Medium;
+}
+
+@font-face {
+    src: url(fonts/Roboto-Bold.ttf);
+    font-family: Roboto-Bold;
+}
+
+@font-face {
+    src: url(fonts/Roboto-Regular.ttf);
+    font-family: Roboto-Regular;
+}
+
+@font-face {
+    src: url(fonts/Roboto-Black.ttf);
+    font-family: Roboto-Black;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.main-container {
+    min-width: 430px;
+    display: flex;
+    flex-direction: row;
+    padding: 0px 140px 0px 140px;
+    height: auto;
+    justify-content: center;
+    background: #FFFFFF;
+}
+
+@media only screen and (max-width: 1199px) {
+    .main-container {
+        padding: 0px 70px 0px 70px;
+    }
+}
+
+@media only screen and (max-width: 899px) {
+    .main-container {
+        flex-direction: column;
+        padding: 0px 35px 0px 35px;
+    }
+}
+
+.menu {
+    align-items: center;
+}
+
+@media only screen and (min-width: 900px) {
+    .menu {
+        height: 100px;
+    }
+}
+
+.main-container > div {
+    flex: 1 1 auto;
+}
+
+@media only screen and (max-width: 899px) {
+    .menu div {
+        margin: 10px 0px 10px 0px;
+    }
+}
+
+/*bar*/
+
+.main-container .logo-text {
+    font-family: Rubik-Bold;
+    font-size: 30px;
+    color: #0D1626;
+    line-height: 27px;
+}
+
+    .main-container .logo-text blue-text {
+        color: #224BDC
+    }
+
+button:focus {
+    outline: 0;
+}
+
+.main-container .buttons-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+    .main-container .buttons-container button {
+        width: 170px;
+        height: 50px;
+        border-radius: 2px;
+        border: none;
+        text-align: center;
+        background: #FFFFFF;
+        font-size: 16px;
+        color: #434B59;
+        font-family: Roboto-Medium;
+    }
+
+    .main-container .buttons-container .blue-button {
+        background: #224BDC;
+        font-family: Roboto-Bold;
+        color: #FFFFFF;
+    }
+
+/*banner*/
+
+.image-container {
+    position: relative;
+    text-align: center;
+    margin-bottom: 91px;
+}
+
+    .image-container img {
+        min-width: 500px;
+        width: 100vw;
+        height: auto;
+    }
+
+    .image-container .image-subcontainer {
+        position: absolute;
+        left: 140px;
+        top: 15%;
+        text-align: left;
+    }
+
+@media only screen and (max-width: 1199px) {
+    .image-container .image-subcontainer {
+        left: 70px;
+        top: 10%;
+    }
+}
+
+.image-container .image-subcontainer h1 {
+    color: #FFFFFF;
+    font-size: 90px;
+    line-height: 85px;
+    font-family: Rubik-Bold;
+    margin: 16px 0px 24px 0px;
+}
+
+.image-container .image-subcontainer h3 {
+    color: #FFFFFF;
+    opacity: 0.7;
+    font-size: 26px;
+    line-height: 30px;
+    font-family: Roboto-Medium;
+}
+
+.image-container .image-subcontainer button {
+    width: 300px;
+    height: 70px;
+    border-radius: 2px;
+    border: none;
+    text-align: center;
+    background: #224BDC;
+    font-size: 22px;
+    color: #FFFFFF;
+    font-family: Roboto-Bold;
+    margin-top: 75px;
+}
+
+@media only screen and (max-width: 899px) {
+    .image-container .image-subcontainer {
+        left: 35px;
+        top: 5%;
+    }
+
+        .image-container .image-subcontainer h1 {
+            font-size: 80px;
+            line-height: 65px;
+            margin: 8px 0px 12px 0px;
+        }
+
+        .image-container .image-subcontainer h3 {
+            font-size: 26px;
+            line-height: 30px;
+        }
+
+        .image-container .image-subcontainer button {
+            width: 300px;
+            height: 70px;
+            margin-top: 35px;
+        }
+}
+
+@media only screen and (max-width: 649px) {
+    .image-container .image-subcontainer {
+        left: 35px;
+        top: 5%;
+    }
+
+        .image-container .image-subcontainer h1 {
+            font-size: 50px;
+            line-height: 45px;
+            margin: 8px 0px 12px 0px;
+        }
+
+        .image-container .image-subcontainer h3 {
+            font-size: 23px;
+            line-height: 30px;
+        }
+
+        .image-container .image-subcontainer button {
+            width: 170px;
+            height: 50px;
+            font-size: 12px;
+            margin-top: 15px;
+        }
+}
+
+@media only screen and (max-width: 319px) {
+    .image-container .image-subcontainer h1 {
+        font-size: 40px;
+        line-height: 32px;
+    }
+}
+
+    /*Content*/
+
+    .main-container .content-container {
+        text-align: left;
+        height: auto;
+        width: auto;
+        min-width: 200px;
+    }
+
+    @media only screen and (min-width:900px) {
+        .main-container .left-container {
+            padding-right: 50px;
+        }
+
+        .main-container .right-container {
+            padding-left: 50px;
+        }
+    }
+
+    .main-container .content-container h1 {
+        font-family: Rubik-Bold;
+        font-size: 40px;
+        line-height: 47px;
+        color: #0D1626;
+        margin-bottom: 22px;
+    }
+
+    .main-container .content-container h2 {
+        font-size: 26px;
+        line-height: 30px;
+        font-family: Roboto-Black;
+        color: #333840;
+    }
+
+    .main-container .content-container h3 {
+        font-size: 22px;
+        line-height: 25px;
+        font-family: Roboto-Regular;
+        color: #434B59;
+    }
+
+    .main-container .content-container p {
+        font-family: Roboto-Regular;
+        font-size: 22px;
+        line-height: 32px;
+        color: #434B59;
+    }
+
+    .main-container .content-container iframe {
+        width: 530px;
+        height: 300px;
+    }
+
+    @media only screen and (min-width:1050px) and (max-width:1399px) {
+        .main-container .content-container iframe {
+            width: 400px;
+            height: 250px;
+        }
+    }
+
+    @media only screen and (min-width:900px) and (max-width:1049px) {
+        .main-container .content-container iframe {
+            width: 350px;
+            height: 250px;
+        }
+    }
+
+    @media only screen and (max-width:599px) {
+        .main-container .content-container iframe {
+            width: 400px;
+            height: 200px;
+        }
+    }
+
+    /*left side*/
+
+    .content-container .location {
+        margin-bottom: 92px;
+    }
+
+        .content-container .location p {
+            margin-bottom: 23px;
+        }
+
+    .content-container .sign-up {
+        margin-bottom: 54px;
+    }
+
+        .content-container .sign-up button {
+            width: 300px;
+            height: 70px;
+            border-radius: 2px;
+            border: none;
+            text-align: center;
+            background: #224BDC;
+            font-size: 22px;
+            color: #FFFFFF;
+            font-family: Roboto-Bold;
+            margin-top: 16px;
+        }
+
+    .content-container .sign-up-details {
+        margin-bottom: 83px;
+    }
+
+        .content-container .sign-up-details h2 {
+            margin-bottom: 17px;
+        }
+
+
+    .content-container .taxes h1 {
+        margin-bottom: 27px;
+    }
+
+    .content-container .taxes .account {
+        width: inherit;
+        min-width: 120px;
+        min-height: 170px;
+        background-color: rgba(34, 75, 220, 0.1);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 36px;
+        padding-left: 30px;
+    }
+
+        .content-container .taxes .account h2 {
+            color: #224BDC;
+        }
+
+        .content-container .taxes .account h3 {
+            color: #224BDC;
+        }
+
+    .content-container .taxes h1 {
+        color: #333840;
+        margin-bottom: 26px;
+        font-family: Roboto-Black;
+    }
+
+
+    flex-account {
+        display: flex;
+    }
+
+    @media only screen and (min-width:900px) and (max-width:1199px) {
+        flex-account {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    /*right side*/
+
+    .content-container .timetable {
+        margin-bottom: 83px;
+    }
+
+        .content-container .timetable h2 {
+            margin-top: 35px;
+        }
+
+        .content-container .timetable p {
+            font-size: 22px;
+            line-height: 25px;
+            font-family: Roboto-Regular;
+            color: #434B59;
+            opacity: 0.7;
+        }
+
+    .content-container .categories h1 {
+        margin-bottom: 25px;
+    }
+
+
+    .content-container .categories h3 {
+        margin-bottom: 35px;
+    }
+
+    /*footer*/
+
+    .footer {
+        margin-top: 190px;
+        border-top: 1px solid rgba(67, 75, 89, 0.4);
+        height: 150px;
+        width: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width:500px;
+    }
+
+        .footer p {
+            font-size: 18px;
+            line-height: 32px;
+            color: #434B59;
+            opacity: 0.7;
+        }
